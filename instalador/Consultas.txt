@@ -1,0 +1,12 @@
+22:21:55 10/08/2013	Contrataciones
+INSERT INTO Contrataciones(Anyo,Numero,Objeto,Fecha,MontoEstimado,FechaDI,Solicitudes) VALUES('2013', '000012', 'Remodelacion de la biblioteca', '10/08/2013', '6.500.000,00', '10/08/2013', '123,124')
+22:22:43 10/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000012' AND CedulaProveedor='3-101-000001'
+22:22:43 10/08/2013	Adjudicaciones
+INSERT INTO Adjudicaciones(Anyo,Numero,CedulaProveedor,OrdenesCompra,Observacion) VALUES('2013', '000012', '3-101-000001', '112221', '122344')
+22:22:56 10/08/2013	Bienes
+INSERT INTO Bienes(Descripcion,Precio,Cantidad) VALUES('111', '1.111,00', '11')
+22:22:56 10/08/2013	Bienes
+INSERT INTO DetallesAdjudicaciones(Adjudicacion,Bien) VALUES('19', 21)
+22:24:09 10/08/2013	Reporte General
+SELECT SUM(Bienes.Precio * Bienes.Cantidad) FROM ((Bienes INNER JOIN DetallesAdjudicaciones ON Bienes.Linea = DetallesAdjudicaciones.Bien) INNER JOIN Adjudicaciones ON Adjudicaciones.Adjudicacion = DetallesAdjudicaciones.Adjudicacion) INNER JOIN Contrataciones ON Adjudicaciones.Numero = Contrataciones.Numero WHERE Contrataciones.Anyo='2013'

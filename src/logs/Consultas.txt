@@ -1,0 +1,311 @@
+22:19:07 02/08/2013	Contrataciones
+INSERT INTO Contrataciones(Anyo,Numero,Objeto,Fecha,MontoEstimado) VALUES('2013', '000006', 'Prueba 6', '02/08/2013', '150,00')
+22:19:57 02/08/2013	Contrataciones
+UPDATE Contrataciones SET Objeto ='Prueba 6', Fecha ='02/08/2013', MontoEstimado = '15.000.000,00' WHERE Anyo ='2013' AND Numero='000006'
+22:20:54 02/08/2013	Contrataciones
+UPDATE Contrataciones SET Objeto ='Prueba 1', Fecha ='02/08/2014', MontoEstimado = '545.000,00' WHERE Anyo ='2013' AND Numero='000001'
+22:21:59 02/08/2013	Contrataciones
+INSERT INTO Contrataciones(Anyo,Numero,Objeto,Fecha,MontoEstimado) VALUES('2013', '000007', 'Prueba 7', '02/08/2013', '1,00')
+22:22:37 02/08/2013	Contrataciones
+INSERT INTO Contrataciones(Anyo,Numero,Objeto,Fecha,MontoEstimado) VALUES('2013', '000007', 'Prueba 7', '02/08/2013', '1,00')
+22:22:51 02/08/2013	Contrataciones
+INSERT INTO Contrataciones(Anyo,Numero,Objeto,Fecha,MontoEstimado) VALUES('2013', '000008', 'Prueba 8', '02/08/2013', '2,00')
+22:34:38 02/08/2013	Contrataciones
+UPDATE Contrataciones SET Objeto ='Prueba 1 s', Fecha ='02/08/2014', MontoEstimado = '545.000,00' WHERE Anyo ='2013' AND Numero='000001'
+22:34:57 02/08/2013	Contrataciones
+UPDATE Contrataciones SET Objeto ='Prueba 1', Fecha ='02/08/2014', MontoEstimado = '545.000,00' WHERE Anyo ='2013' AND Numero='000001'
+22:35:22 02/08/2013	Contrataciones
+UPDATE Contrataciones SET Objeto ='Prueba 7', Fecha ='02/08/2013', MontoEstimado = '120.543,23' WHERE Anyo ='2013' AND Numero='000007'
+22:35:37 02/08/2013	Contrataciones
+UPDATE Contrataciones SET Objeto ='Prueba 8', Fecha ='02/08/2013', MontoEstimado = '20.000.000,00' WHERE Anyo ='2013' AND Numero='000008'
+23:15:21 02/08/2013	Contrataciones
+INSERT INTO Proveedores(Cedula,RazonSocial) VALUES('3-101-123456', 'Opticas Visi贸n')
+23:28:39 02/08/2013	Contrataciones
+INSERT INTO Proveedores(Cedula,RazonSocial) VALUES('3-101-123456', 'Opticas Visi贸n')
+23:28:49 02/08/2013	Contrataciones
+INSERT INTO Proveedores(Cedula,RazonSocial) VALUES('3-101-123457', 'Munkel')
+23:40:24 02/08/2013	Contrataciones
+UPDATE Proveedores SET RazonSocial ='Munkel S.A.', ' WHERE Cedula ='3-101-123457'
+23:42:03 02/08/2013	Contrataciones
+UPDATE Proveedores SET RazonSocial ='Munkel S.A.',  WHERE Cedula ='3-101-123457'
+23:43:41 02/08/2013	Contrataciones
+UPDATE Proveedores SET RazonSocial ='Munkel S.A.' WHERE Cedula ='3-101-123457'
+23:44:04 02/08/2013	Contrataciones
+UPDATE Proveedores SET RazonSocial ='Opticas Visi贸n S.A.' WHERE Cedula ='3-101-123456'
+00:20:36 03/08/2013	Contrataciones
+UPDATE Proveedores SET RazonSocial ='Opticas Visi贸n' WHERE Cedula ='3-101-123456'
+00:20:54 03/08/2013	Contrataciones
+UPDATE Proveedores SET RazonSocial ='Munkel' WHERE Cedula ='3-101-123457'
+11:56:09 03/08/2013	Contrataciones
+11:56:33 03/08/2013	Contrataciones
+11:57:17 03/08/2013	Contrataciones
+12:04:35 03/08/2013	Contrataciones
+UPDATE Bienes SET Descripcion ='Bien 11', Precio='1.0', Cantidad='1'  WHERE Linea ='1'
+12:06:06 03/08/2013	Contrataciones
+UPDATE Bienes SET Descripcion ='Bien 11', Precio='1.0', Cantidad='1'  WHERE Linea =1
+12:09:46 03/08/2013	Contrataciones
+UPDATE Bienes SET Descripcion ='Bien 11', Precio='100.000.000,00', Cantidad='1'  WHERE Linea =1
+12:11:41 03/08/2013	Contrataciones
+UPDATE Bienes SET Descripcion ='Contratacion de ampliacion de 2 planche para la Sede del Pacifico', Precio='1.0E8', Cantidad='1'  WHERE Linea =1
+12:14:18 03/08/2013	Contrataciones
+UPDATE Bienes SET Descripcion ='Bien 1', Precio='1.000.000.000,00', Cantidad='1'  WHERE Linea =1
+14:00:24 03/08/2013	Contrataciones
+UPDATE Contrataciones SET Objeto ='Prueba 1', Fecha ='02/08/2014', MontoEstimado = '545.000,00' WHERE Anyo ='2013' AND Numero='000001'
+15:05:58 03/08/2013	Adjudicaciones
+INSERT INTO Adjudicaciones(CedulaProveedor,OrdenesCompra,Observacion) VALUES('3-101-123456', '12345', 'Observacion Prueba')
+15:12:03 03/08/2013	Adjudicaciones
+INSERT INTO Adjudicaciones(CedulaProveedor,OrdenesCompra,Observacion) VALUES('3-101-123456', '12345', 'Observacion Prueba')
+15:26:28 03/08/2013	Adjudicaciones
+INSERT INTO Adjudicaciones(CedulaProveedor,OrdenesCompra,Observacion) VALUES('3-101-123457', '0001,0002', 'Observacion de Prueba')
+15:26:30 03/08/2013	Adjudicaciones
+INSERT INTO DetallesContrataciones(Anyo,Contratacion,Adjudicacion) VALUES('2013', '000004', 3)
+15:34:48 03/08/2013	Adjudicaciones
+INSERT INTO Adjudicaciones(CedulaProveedor,OrdenesCompra,Observacion) VALUES('3-101-123456', '111', '1')
+15:34:49 03/08/2013	Adjudicaciones
+INSERT INTO DetallesContrataciones(Anyo,Contratacion,Adjudicacion) VALUES('2014', '000002', 4)
+15:39:17 03/08/2013	Adjudicaciones
+INSERT INTO Adjudicaciones(CedulaProveedor,OrdenesCompra,Observacion) VALUES('3-101-123456', '1', '1')
+15:39:18 03/08/2013	Adjudicaciones
+INSERT INTO DetallesContrataciones(Anyo,Contratacion,Adjudicacion) VALUES('2013', '000005', 5)
+15:53:46 03/08/2013	Contrataciones
+INSERT INTO Contrataciones(Anyo,Numero,Objeto,Fecha,MontoEstimado) VALUES('2013', '000009', 'Compra de Equipo de Computacion', '03/08/2013', '5.460.000,00')
+15:54:20 03/08/2013	Contrataciones
+INSERT INTO Proveedores(Cedula,RazonSocial) VALUES('3-101-000001', 'GOLLO S.A.')
+15:54:36 03/08/2013	Contrataciones
+INSERT INTO Proveedores(Cedula,RazonSocial) VALUES('3-101-000002', 'Importadora Monge S.A')
+15:55:21 03/08/2013	Adjudicaciones
+INSERT INTO Adjudicaciones(CedulaProveedor,OrdenesCompra,Observacion) VALUES('3-101-000001', '1', 'No aplica')
+15:55:22 03/08/2013	Adjudicaciones
+INSERT INTO DetallesContrataciones(Anyo,Contratacion,Adjudicacion) VALUES('2013', '000009', 6)
+15:55:50 03/08/2013	Contrataciones
+INSERT INTO Bienes(Descripcion,Precio,Cantidad) VALUES('Computadora de Escritorio DELL', '450.000,00', '25')
+15:55:52 03/08/2013	Bienes
+INSERT INTO DetallesAdjudicacion(Adjudicacion,Bien) VALUES('6', 3)
+15:58:43 03/08/2013	Adjudicaciones
+INSERT INTO Adjudicaciones(CedulaProveedor,OrdenesCompra,Observacion) VALUES('3-101-000002', '2', 'No aplica')
+15:58:44 03/08/2013	Adjudicaciones
+INSERT INTO DetallesContrataciones(Anyo,Contratacion,Adjudicacion) VALUES('2013', '000009', 7)
+15:58:58 03/08/2013	Contrataciones
+INSERT INTO Bienes(Descripcion,Precio,Cantidad) VALUES('UPS', '65.000,00', '20')
+15:58:59 03/08/2013	Bienes
+INSERT INTO DetallesAdjudicaciones(Adjudicacion,Bien) VALUES('7', 4)
+16:05:33 03/08/2013	Adjudicaciones
+INSERT INTO Adjudicaciones(CedulaProveedor,OrdenesCompra,Observacion) VALUES('3-101-000001', '3', 'No Aplica')
+16:05:35 03/08/2013	Adjudicaciones
+INSERT INTO DetallesContrataciones(Anyo,Contratacion,Adjudicacion) VALUES('2013', '000009', 8)
+18:34:20 03/08/2013	Adjudicaciones
+INSERT INTO Adjudicaciones(CedulaProveedor,OrdenesCompra,Observacion) VALUES('3-101-123456', '1', '1')
+18:34:22 03/08/2013	Adjudicaciones
+INSERT INTO DetallesContrataciones(Anyo,Contratacion,Adjudicacion) VALUES('2013', '000001', 9)
+18:34:31 03/08/2013	Contrataciones
+INSERT INTO Bienes(Descripcion,Precio,Cantidad) VALUES('1', '1,00', '1')
+18:34:32 03/08/2013	Bienes
+INSERT INTO DetallesAdjudicaciones(Adjudicacion,Bien) VALUES('9', 5)
+18:41:50 03/08/2013	Contrataciones
+INSERT INTO Proveedores(Cedula,RazonSocial) VALUES('3-101-000003', 'DIPROLAB')
+18:42:19 03/08/2013	Contrataciones
+INSERT INTO Proveedores(Cedula,RazonSocial) VALUES('3-101-000005', 'CASJIM S.A.')
+18:42:45 03/08/2013	Contrataciones
+UPDATE Proveedores SET RazonSocial ='Importadora Monge' WHERE Cedula ='3-101-000002'
+21:11:30 03/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+21:11:34 03/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+21:11:35 03/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+21:11:42 03/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123457'
+21:11:42 03/08/2013	Adjudicaciones
+INSERT INTO Adjudicaciones(Anyo,Numero,CedulaProveedor,OrdenesCompra,Observacion) VALUES('2013', '000001', 3-101-123457', '1', '1')
+22:01:05 03/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+22:03:29 03/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+22:04:18 03/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000004' AND CedulaProveedor='3-101-123456'
+22:04:18 03/08/2013	Adjudicaciones
+INSERT INTO Adjudicaciones(Anyo,Numero,CedulaProveedor,OrdenesCompra,Observacion) VALUES('2013', '000004', '3-101-123456', '1', '1')
+22:04:34 03/08/2013	Contrataciones
+INSERT INTO Bienes(Descripcion,Precio,Cantidad) VALUES('1', '1,00', '1')
+22:04:35 03/08/2013	Bienes
+INSERT INTO DetallesAdjudicaciones(Adjudicacion,Bien) VALUES('0', 6)
+22:05:21 03/08/2013	Contrataciones
+INSERT INTO Bienes(Descripcion,Precio,Cantidad) VALUES('2', '2,00', '2')
+22:05:23 03/08/2013	Bienes
+INSERT INTO DetallesAdjudicaciones(Adjudicacion,Bien) VALUES('0', 7)
+22:18:02 03/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123457'
+22:18:02 03/08/2013	Adjudicaciones
+INSERT INTO Adjudicaciones(Anyo,Numero,CedulaProveedor,OrdenesCompra,Observacion) VALUES('2013', '000001', '3-101-123457', '1', '1')
+22:18:09 03/08/2013	Contrataciones
+INSERT INTO Bienes(Descripcion,Precio,Cantidad) VALUES('2', '2,00', '2')
+22:18:11 03/08/2013	Bienes
+INSERT INTO DetallesAdjudicaciones(Adjudicacion,Bien) VALUES('13', 8)
+22:18:17 03/08/2013	Contrataciones
+INSERT INTO Bienes(Descripcion,Precio,Cantidad) VALUES('3', '3,00', '3')
+22:18:21 03/08/2013	Bienes
+INSERT INTO DetallesAdjudicaciones(Adjudicacion,Bien) VALUES('13', 9)
+22:18:34 03/08/2013	Contrataciones
+INSERT INTO Bienes(Descripcion,Precio,Cantidad) VALUES('10', '10,00', '10')
+22:18:40 03/08/2013	Bienes
+INSERT INTO DetallesAdjudicaciones(Adjudicacion,Bien) VALUES('13', 10)
+23:52:35 03/08/2013	Contrataciones
+UPDATE Adjudicaciones SET OrdenesCompra ='111,112', Observacion='No aplica' WHERE Adjudicacion =4
+00:02:09 04/08/2013	Contrataciones
+INSERT INTO Bienes(Descripcion,Precio,Cantidad) VALUES('Bien 14', '14,00', '14')
+00:02:11 04/08/2013	Bienes
+INSERT INTO DetallesAdjudicaciones(Adjudicacion,Bien) VALUES('0', 11)
+00:32:14 04/08/2013	Contrataciones
+UPDATE Bienes SET Descripcion ='Bien 10', Precio='25.000.000,00', Cantidad='10'  WHERE Linea =10
+00:32:26 04/08/2013	Contrataciones
+UPDATE Bienes SET Descripcion ='Bien 6', Precio='4.000,00', Cantidad='1'  WHERE Linea =6
+00:42:59 04/08/2013	Contrataciones
+INSERT INTO Bienes(Descripcion,Precio,Cantidad) VALUES('Bien 14', '14,00', '14')
+00:43:01 04/08/2013	Bienes
+INSERT INTO DetallesAdjudicaciones(Adjudicacion,Bien) VALUES('13', 12)
+01:14:43 04/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000005' AND CedulaProveedor='3-101-123456'
+01:14:50 04/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000006' AND CedulaProveedor='3-101-123456'
+01:14:50 04/08/2013	Adjudicaciones
+INSERT INTO Adjudicaciones(Anyo,Numero,CedulaProveedor,OrdenesCompra,Observacion) VALUES('2013', '000006', '3-101-123456', '1', 'No aplica')
+01:15:16 04/08/2013	Contrataciones
+INSERT INTO Bienes(Descripcion,Precio,Cantidad) VALUES('15', '15,00', '15')
+01:15:17 04/08/2013	Bienes
+INSERT INTO DetallesAdjudicaciones(Adjudicacion,Bien) VALUES('14', 13)
+01:15:53 04/08/2013	Contrataciones
+UPDATE Adjudicaciones SET OrdenesCompra ='1', Observacion='No aplica' WHERE Adjudicacion =14
+14:06:48 04/08/2013	Proveedores
+INSERT INTO Proveedores(Cedula,RazonSocial) VALUES('3-101-000004', 'Libreria LEMAY S.A.')
+14:07:16 04/08/2013	Proveedores
+INSERT INTO Proveedores(Cedula,RazonSocial) VALUES('3-101-111111', '1')
+14:07:30 04/08/2013	Proveedores
+INSERT INTO Proveedores(Cedula,RazonSocial) VALUES('3-101-222222', '1111111')
+14:07:52 04/08/2013	Proveedores
+INSERT INTO Proveedores(Cedula,RazonSocial) VALUES('3-101-333333', '3')
+14:10:11 04/08/2013	Proveedores
+INSERT INTO Proveedores(Cedula,RazonSocial) VALUES('3-101-444444', '4444444444444444')
+14:10:57 04/08/2013	Proveedores
+INSERT INTO Proveedores(Cedula,RazonSocial) VALUES('3-101-111111', '1')
+14:11:06 04/08/2013	Proveedores
+INSERT INTO Proveedores(Cedula,RazonSocial) VALUES('3-101-555555', '1')
+14:11:42 04/08/2013	Proveedores
+INSERT INTO Proveedores(Cedula,RazonSocial) VALUES('3-101-666666', '1')
+14:13:52 04/08/2013	Bienes
+INSERT INTO Bienes(Descripcion,Precio,Cantidad) VALUES('12', '12,00', '12')
+14:13:52 04/08/2013	Bienes
+INSERT INTO DetallesAdjudicaciones(Adjudicacion,Bien) VALUES('3', 14)
+14:14:02 04/08/2013	Bienes
+INSERT INTO Bienes(Descripcion,Precio,Cantidad) VALUES('13', '13,00', '13')
+14:14:02 04/08/2013	Bienes
+INSERT INTO DetallesAdjudicaciones(Adjudicacion,Bien) VALUES('3', 15)
+14:41:50 04/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2014' AND Numero='000002' AND CedulaProveedor='3-101-123456'
+14:42:00 04/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2015' AND Numero='000003' AND CedulaProveedor='3-101-123456'
+14:42:00 04/08/2013	Adjudicaciones
+INSERT INTO Adjudicaciones(Anyo,Numero,CedulaProveedor,OrdenesCompra,Observacion) VALUES('2015', '000003', '3-101-123456', '1', 'No aplica')
+14:42:28 04/08/2013	Bienes
+INSERT INTO Bienes(Descripcion,Precio,Cantidad) VALUES('1', '545.000,00', '1')
+14:42:28 04/08/2013	Bienes
+INSERT INTO DetallesAdjudicaciones(Adjudicacion,Bien) VALUES('15', 16)
+14:52:58 04/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-111111'
+14:52:58 04/08/2013	Adjudicaciones
+INSERT INTO Adjudicaciones(Anyo,Numero,CedulaProveedor,OrdenesCompra,Observacion) VALUES('2013', '000001', '3-101-111111', '1', '1')
+14:53:23 04/08/2013	Adjudicaciones
+UPDATE Adjudicaciones SET OrdenesCompra ='1', Observacion='No aplica' WHERE Adjudicacion =16
+23:04:46 04/08/2013	Bienes
+UPDATE Bienes SET Descripcion ='Materiales para la contrucci髇 del nuevo edificio de Acci髇 Social', Precio='545.000,00', Cantidad='1'  WHERE Linea =16
+23:05:28 04/08/2013	Bienes
+UPDATE Bienes SET Descripcion ='Instalaci髇 de ascensor en la Biblioteca de la Sede', Precio='12,00', Cantidad='12'  WHERE Linea =14
+23:11:20 04/08/2013	Bienes
+UPDATE Bienes SET Descripcion ='Compra de equipo de computo para el nuevo laboratorio de la carrera de Inform醫ica Empresarial', Precio='30.000.000,00', Cantidad='15'  WHERE Linea =13
+19:13:16 05/08/2013	Adjudicaciones
+UPDATE Adjudicaciones SET OrdenesCompra ='0001,0002', Observacion='Observacion de Prueba' WHERE Adjudicacion =3
+19:13:52 05/08/2013	Bienes
+UPDATE Bienes SET Descripcion ='Bien 10', Precio='25.000.000,00', Cantidad='1'  WHERE Linea =10
+19:14:01 05/08/2013	Bienes
+UPDATE Bienes SET Descripcion ='Bien 10', Precio='25.000.000,00', Cantidad='100'  WHERE Linea =10
+19:14:23 05/08/2013	Bienes
+UPDATE Bienes SET Descripcion ='Bien 10', Precio='25.000.000,00', Cantidad='10'  WHERE Linea =10
+15:16:03 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+15:19:06 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+15:21:19 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+15:25:53 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+15:27:11 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+15:29:39 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+15:36:33 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+15:38:46 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+15:40:05 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+15:41:17 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+15:56:08 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+16:02:14 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+16:03:16 07/08/2013	Bienes
+INSERT INTO Bienes(Descripcion,Precio,Cantidad) VALUES('9', '9,00', '9')
+16:03:16 07/08/2013	Bienes
+INSERT INTO DetallesAdjudicaciones(Adjudicacion,Bien) VALUES('9', 18)
+16:06:02 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+16:14:15 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+16:16:26 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+16:18:00 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000010' AND CedulaProveedor='3-101-000010'
+16:21:07 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+16:21:09 07/08/2013	Adjudicaciones
+SELECT Adjudicaciones.Adjudicacion,Proveedores.RazonSocial, Adjudicaciones.OrdenesCompra, Adjudicaciones.Observacion, Adjudicaciones.Anyo+'SG-'+Adjudicaciones.Numero+'-CDSG' FROM (Adjudicaciones INNER JOIN Proveedores ON Adjudicaciones.CedulaProveedor = Proveedores.Cedula) WHERE Adjudicaciones.Anyo='2013' AND Adjudicaciones.Numero='000001' AND Adjudicaciones.CedulaProveedor='3-101-123456'
+16:22:39 07/08/2013	Adjudicaciones
+UPDATE Adjudicaciones SET OrdenesCompra ='1', Observacion='No aplica' WHERE Adjudicacion =9
+16:23:24 07/08/2013	Adjudicaciones
+UPDATE Adjudicaciones SET OrdenesCompra ='1', Observacion='No aplica' WHERE Adjudicacion =9
+16:24:34 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+16:24:37 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+16:24:41 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+16:26:58 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+16:27:34 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+16:28:36 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+16:29:01 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+16:29:02 07/08/2013	Adjudicaciones
+SELECT Adjudicaciones.Adjudicacion,Proveedores.RazonSocial, Adjudicaciones.OrdenesCompra, Adjudicaciones.Observacion, Adjudicaciones.Anyo+'SG-'+Adjudicaciones.Numero+'-CDSG' FROM (Adjudicaciones INNER JOIN Proveedores ON Adjudicaciones.CedulaProveedor = Proveedores.Cedula) WHERE Adjudicaciones.Anyo='2013' AND Adjudicaciones.Numero='000001' AND Adjudicaciones.CedulaProveedor='3-101-123456'
+16:30:48 07/08/2013	Adjudicaciones
+UPDATE Adjudicaciones SET OrdenesCompra ='1', Observacion='No aplica' WHERE Adjudicacion =9
+16:31:25 07/08/2013	Bienes
+INSERT INTO Bienes(Descripcion,Precio,Cantidad) VALUES('Bien 19', '19,00', '1')
+16:31:25 07/08/2013	Bienes
+INSERT INTO DetallesAdjudicaciones(Adjudicacion,Bien) VALUES('9', 19)
+16:31:33 07/08/2013	Adjudicaciones
+UPDATE Adjudicaciones SET OrdenesCompra ='1', Observacion='No aplica' WHERE Adjudicacion =9
+16:31:46 07/08/2013	Adjudicaciones
+SELECT COUNT(Adjudicacion) FROM Adjudicaciones WHERE Anyo='2013' AND Numero='000001' AND CedulaProveedor='3-101-123456'
+16:31:48 07/08/2013	Adjudicaciones
+SELECT Adjudicaciones.Adjudicacion,Proveedores.RazonSocial, Adjudicaciones.OrdenesCompra, Adjudicaciones.Observacion, Adjudicaciones.Anyo+'SG-'+Adjudicaciones.Numero+'-CDSG' FROM (Adjudicaciones INNER JOIN Proveedores ON Adjudicaciones.CedulaProveedor = Proveedores.Cedula) WHERE Adjudicaciones.Anyo='2013' AND Adjudicaciones.Numero='000001' AND Adjudicaciones.CedulaProveedor='3-101-123456'
+16:31:56 07/08/2013	Adjudicaciones
+UPDATE Adjudicaciones SET OrdenesCompra ='1', Observacion='No aplica' WHERE Adjudicacion =9
+16:48:05 07/08/2013	Contrataciones
+INSERT INTO Contrataciones(Anyo,Numero,Objeto,Fecha,MontoEstimado,FechaDI,Solicitudes) VALUES('2013', '000011', '1', '07/08/2013', '65.000,00', '07/08/2013', '1239')
+16:50:29 07/08/2013	Contrataciones
+UPDATE Contrataciones SET Objeto ='1', Fecha='07/08/2013', MontoEstimado='65.000,00', FechaDI='07/08/2013', Solicitudes='1239' WHERE Anyo ='2013' AND Numero='000011'
+17:02:11 07/08/2013	Contrataciones
+INSERT INTO Contrataciones(Anyo,Numero,Objeto,Fecha,MontoEstimado,FechaDI,Solicitudes) VALUES('2013', '000016', '9', '11/11/1111', '1,00', '11/11/1111', '')

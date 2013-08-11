@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CODI-ContratacionesProveedores" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="08fe5b87-92fd-45bd-a36e-0873a725fefc">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="30"/>
+	<parameter name="logo" class="javax.swing.ImageIcon">
+		<defaultValueExpression><![CDATA[null]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cedula" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT Proveedores.Cedula, Proveedores.RazonSocial, Bienes.Descripcion, Bienes.Cantidad, Bienes.Precio, Adjudicaciones.Anyo+'CD-'+Adjudicaciones.Numero+'-CDSG' AS CD FROM ((Proveedores INNER JOIN Adjudicaciones ON Proveedores.Cedula = Adjudicaciones.CedulaProveedor)INNER JOIN DetallesAdjudicaciones ON Adjudicaciones.Adjudicacion = DetallesAdjudicaciones.Adjudicacion) INNER JOIN Bienes ON DetallesAdjudicaciones.Bien = Bienes.Linea WHERE Proveedores.Cedula = $P{cedula} ORDER BY Adjudicaciones.Anyo+'CD-'+Adjudicaciones.Numero+'-CDSG' ASC]]>
+	</queryString>
+	<field name="Cedula" class="java.lang.String"/>
+	<field name="RazonSocial" class="java.lang.String"/>
+	<field name="Descripcion" class="java.lang.String"/>
+	<field name="Cantidad" class="java.lang.Integer"/>
+	<field name="Precio" class="java.lang.Double"/>
+	<field name="CD" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="145" splitType="Stretch">
+			<image>
+				<reportElement uuid="3936e93d-d93a-4bee-a7f5-15ab94524e41" x="0" y="0" width="555" height="105"/>
+				<imageExpression><![CDATA[$P{logo}.getImage()]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="8cddba60-a84b-4db1-ac20-533abe3d919c" mode="Opaque" x="0" y="105" width="555" height="34" forecolor="#000000"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Bienes Adjudicados a "+$F{RazonSocial}+"\t"+$F{Cedula}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="f8e7c8a5-edfb-4ac1-bc25-e6a136b01195" mode="Opaque" x="0" y="0" width="125" height="34" forecolor="#FFFFFF" backcolor="#41ADE7"/>
+				<box>
+					<rightPen lineWidth="2.0" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contratación Directa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a7646fb7-a809-4e4e-8ebc-2115f6e116b9" mode="Opaque" x="125" y="0" width="272" height="34" forecolor="#FFFFFF" backcolor="#41ADE7"/>
+				<box>
+					<rightPen lineWidth="2.0" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bien]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="53462fa4-100f-4c04-aa3c-e7506a74334f" mode="Opaque" x="397" y="0" width="64" height="34" forecolor="#FFFFFF" backcolor="#41ADE7"/>
+				<box>
+					<rightPen lineWidth="2.0" lineColor="#FFFFFF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cantidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6b57ed71-2427-4448-97b8-932613aec3eb" mode="Opaque" x="461" y="0" width="94" height="34" forecolor="#FFFFFF" backcolor="#41ADE7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Precio]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement uuid="c160c81c-a403-4be0-943e-33aa72760c79" x="0" y="0" width="125" height="32"/>
+				<box leftPadding="2" rightPadding="2">
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CD}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="04ac5736-bb39-4fe5-bbdc-bfa4b2bdb032" x="125" y="0" width="272" height="32"/>
+				<box leftPadding="2" rightPadding="2">
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Descripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5f9b71ab-608c-498f-a87b-48467417ae12" x="397" y="0" width="64" height="32"/>
+				<box leftPadding="2" rightPadding="2">
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Cantidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="773729fe-6336-4f4e-918e-bd06549bb860" x="461" y="0" width="94" height="32"/>
+				<box leftPadding="2" rightPadding="2">
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.text.DecimalFormat("#,###.00").format($F{Precio})]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="36">
+			<textField>
+				<reportElement uuid="4913e55d-b33a-40bf-b1fe-9f3ac35d4bee" x="411" y="14" width="92" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Página "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="4508ad9d-457f-4fd9-bead-0932482dad39" x="503" y="14" width="52" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
